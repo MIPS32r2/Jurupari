@@ -21,7 +21,7 @@ std::string sha256(const std::string &str) {
   return ss.str();
 }
 
-// --- Cache validity ---
+// --- Validação de Cache ---
 bool is_cache_valid(const std::string &filepath, int max_age_seconds) {
   struct stat st;
   if (stat(filepath.c_str(), &st) != 0)
@@ -60,7 +60,7 @@ std::string fetch_url(const std::string &url) {
   return buffer;
 }
 
-// --- Fetch with cache ---
+// --- cria cache ---
 std::string fetch_url_with_cache(const std::string &url,
                                  const std::string &cache_dir) {
   std::string hash_name = sha256(url);
@@ -86,7 +86,7 @@ std::string fetch_url_with_cache(const std::string &url,
   return html;
 }
 
-// --- Extract words ---
+// --- Extrai palavras ---
 std::vector<std::string>
 extract_alpha_words_from_text(const std::string &text) {
   std::vector<std::string> words;
@@ -127,7 +127,7 @@ bool is_stopword(const std::string &word,
   return stopwords.find(word) != stopwords.end();
 }
 
-// --- Read words from file ---
+// --- Lê palavras de um arquivo ---
 std::vector<std::string> read_words_from_file(const std::string &filename) {
   std::ifstream infile(filename);
   if (!infile.is_open()) {
