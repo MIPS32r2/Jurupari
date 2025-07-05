@@ -37,4 +37,4 @@ target_link_libraries(jurupari OpenSSL::SSL OpenSSL::Crypto CURL::libcurl)
 # Mensagens para debug
 message(STATUS "Projeto: ${PROJECT_NAME}")
 message(STATUS "Fontes: ${SOURCES}")
-message(STATUS "Include dirs: ${PROJECT_SOURCE_DIR}/include"
+message(STATUS "Include dirs: ${PROJECT_SOURCE_DIR}/include")
