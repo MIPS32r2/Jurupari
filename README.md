@@ -70,14 +70,30 @@ make
 ```bash
 ./jurupari --from-url https://exemplo.com
 ```
-### **Parâmetros adicionais**
+| Parâmetro               | Descrição                                                          | Valor padrão       |
+| ----------------------- | ------------------------------------------------------------------ | ------------------ |
+| `--stopwords <arquivo>` | Caminho para o arquivo de stopwords a serem removidas da wordlist. | `stopwords.txt`    |
+| `--max-freq <n>`        | Define a frequência máxima de ocorrência de palavras (filtragem).  | `10`               |
+| `--min-len <n>`         | Tamanho mínimo das palavras incluídas.                             | `4`                |
+| `--max-len <n>`         | Tamanho máximo das palavras incluídas.                             | `32`               |
+| `--no-leet`             | Desativa substituições *leet* (ex: `a`→`@`, `e`→`3`).              | Ativado por padrão |
+| `--no-reverse`          | Desativa uso de palavras invertidas.                               | Ativado por padrão |
+| `--no-caps`             | Desativa variações de capitalização (ex: `Palavra`, `PALAVRA`).    | Ativado por padrão |
+| `--output <arquivo>`    | Define o nome do arquivo de saída da wordlist gerada.              | `wordlist.txt`     |
 
-| Parâmetro                   | Descrição                                                                     | Exemplo de uso              |
-| --------------------------- | ----------------------------------------------------------------------------- | --------------------------- |
-| `--min-length <n>`          | Define o tamanho **mínimo** das palavras a serem incluídas na wordlist.       | `--min-length 5`            |
-| `--max-length <n>`          | Define o tamanho **máximo** das palavras a serem incluídas na wordlist.       | `--max-length 12`           |
-| `--stopwords stopwords.txt` | Remove as **stopwords** definidas no arquivo especificado do resultado final. | `--stopwords stopwords.txt` |
+## **✅ Exemplos práticos**
 
-## **✅ Exemplo combinado de uso:**
+### **Gerar wordlist de URLs desativando leet e definindo arquivo de saída**
 ```bash
-./jurupari --from-file input.txt --min-length 5 --max-length 12 --stopwords stopwords.txt
+./jurupari --from-url https://exemplo.com --no-leet --output minha_wordlist.txt
+```
+```bash
+Gerar wordlist de arquivos locais com tamanho mínimo e máximo personalizado
+```
+```bash
+./jurupari --from-file dados.txt --min-len 6 --max-len 20
+```
+### **Usar stopwords customizadas e desativar inversão**
+```bash
+./jurupari --from-file lista.txt --stopwords minhas_stopwords.txt --no-reverse
+```
