@@ -47,4 +47,23 @@ git clone https://github.com/seuusuario/jurupari.git
 cd jurupari
 mkdir build && cd build
 cmake ..
-make
+make```bash
+
+---
+
+## ⚙️ **Instalação**
+
+### **Pré-requisitos**
+
+- g++ >= 10
+- cmake >= 3.10
+- libcurl
+- OpenSSL
+- nlohmann/json
+
+### **Linux (Ubuntu/Debian)**
+
+```bash
+sudo apt update
+sudo apt install g++ cmake libcurl4-openssl-dev libssl-dev
+
