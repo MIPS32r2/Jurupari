@@ -90,9 +90,10 @@ make
 ```bash
 Gerar wordlist de arquivos locais com tamanho mínimo e máximo personalizado
 ```
+
 ```bash
 ./jurupari --from-file dados.txt --min-len 6 --max-len 20
-```
+``
 ### **Usar stopwords customizadas e desativar inversão**
 ```bash
 ./jurupari --from-file lista.txt --stopwords minhas_stopwords.txt --no-reverse
