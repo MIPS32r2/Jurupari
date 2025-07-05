@@ -54,7 +54,7 @@ sudo apt install g++ cmake libcurl4-openssl-dev libssl-dev
 ### **Passo a passo de Instalação**
 
 ```bash
-git clone https://github.com/seuusuario/jurupari.git
+git clone https://github.com/MIPS32r2/jurupari.git
 cd jurupari
 mkdir build && cd build
 cmake ..
