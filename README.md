@@ -30,24 +30,6 @@ Jurupari é um gerador avançado de wordlists escrito em **C++**, projetado para
 
 ✅ Compatibilidade com Hashcat e John the Ripper
 
----
-
-## 🔧 **Como instalar**
-
-Requisitos:
-
-- CMake >= 3.10
-- g++ >= 10
-- libcurl
-- OpenSSL
-- nlohmann/json
-
-```bash
-git clone https://github.com/seuusuario/jurupari.git
-cd jurupari
-mkdir build && cd build
-cmake ..
-make```bash
 
 ---
 
@@ -66,4 +48,3 @@ make```bash
 ```bash
 sudo apt update
 sudo apt install g++ cmake libcurl4-openssl-dev libssl-dev
-
