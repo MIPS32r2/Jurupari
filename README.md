@@ -2,9 +2,9 @@
 
 # Jurupari
 
-### Wordlist Generator & OSINT Enrichment Tool
+### Wordlist Generator
 
-Jurupari é um gerador avançado de wordlists escrito em **C++**, projetado para pentesters, red teamers e pesquisadores de segurança que precisam de listas otimizadas, personalizadas e enriquecidas com informações públicas (OSINT) para cracking de senhas e testes de segurança.
+Jurupari é um gerador avançado de wordlists escrito em **C++**, projetado para pentesters, red teamers e pesquisadores de segurança que precisam de listas otimizadas para cracking de senhas e testes de segurança.
 
 ---
 
@@ -56,8 +56,8 @@ sudo apt install g++ cmake libcurl4-openssl-dev libssl-dev
 ### **Passo a passo de Instalação**
 
 ```bash
-git clone https://github.com/MIPS32r2/jurupari.git
-cd jurupari
+git clone https://github.com/MIPS32r2/Jurupari.git
+cd Jurupari
 mkdir build && cd build
 cmake ..
 make
