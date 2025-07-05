@@ -80,4 +80,4 @@ make
 
 ## **✅ Exemplo combinado de uso:**
 ```bash
-./jurupari --from-file input.txt --min-length 5 --max-length 12 --stopwords stopwords.txt``
+./jurupari --from-file input.txt --min-length 5 --max-length 12 --stopwords stopwords.txt
