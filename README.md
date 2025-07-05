@@ -1,3 +1,5 @@
+![Jurupari_Icon](https://github.com/user-attachments/assets/fcbfeaa4-6857-48d8-ba32-b0f4e0804f00)
+
 # Jurupari
 
 ### Wordlist Generator & OSINT Enrichment Tool
