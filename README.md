@@ -68,7 +68,7 @@ make
 ```bash
 ./jurupari --from-file lista.txt
 ```
-### **Gerar wordlist de URL com cache**
+### **Gerar wordlist de URL**
 ```bash
 ./jurupari --from-url https://exemplo.com
 ```
