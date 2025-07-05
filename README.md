@@ -48,3 +48,37 @@ Jurupari é um gerador avançado de wordlists escrito em **C++**, projetado para
 ```bash
 sudo apt update
 sudo apt install g++ cmake libcurl4-openssl-dev libssl-dev
+```
+---
+
+### **Passo a passo de Instalação**
+
+```bash
+git clone https://github.com/seuusuario/jurupari.git
+cd jurupari
+mkdir build && cd build
+cmake ..
+make
+```
+## **Uso Básico**
+
+### **Gerar wordlist de arquivo local**
+```bash
+./jurupari --from-file lista.txt
+```
+### **Gerar wordlist de URL com cache**
+```bash
+./jurupari --from-url https://exemplo.com
+```
+### **Parâmetros adicionais**
+
+| Parâmetro                   | Descrição                                                                     | Exemplo de uso              |
+| --------------------------- | ----------------------------------------------------------------------------- | --------------------------- |
+| `--min-length <n>`          | Define o tamanho **mínimo** das palavras a serem incluídas na wordlist.       | `--min-length 5`            |
+| `--max-length <n>`          | Define o tamanho **máximo** das palavras a serem incluídas na wordlist.       | `--max-length 12`           |
+| `--stopwords stopwords.txt` | Remove as **stopwords** definidas no arquivo especificado do resultado final. | `--stopwords stopwords.txt` |
+
+## **✅ Exemplo combinado de uso:**
+```bash
+./jurupari --from-file input.txt --min-length 5 --max-length 12 --stopwords stopwords.txt
+``
