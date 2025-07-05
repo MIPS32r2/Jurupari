@@ -1,3 +1,0 @@
-/home/mips32r2/Jurupari/build/CMakeFiles/jurupari.dir
-/home/mips32r2/Jurupari/build/CMakeFiles/edit_cache.dir
-/home/mips32r2/Jurupari/build/CMakeFiles/rebuild_cache.dir
