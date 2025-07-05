@@ -1,4 +1,4 @@
-# 🐍 Jurupari
+# Jurupari
 
 ### Wordlist Generator & OSINT Enrichment Tool
 
